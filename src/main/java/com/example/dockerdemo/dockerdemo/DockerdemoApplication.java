@@ -14,9 +14,14 @@ public class DockerdemoApplication {
 		System.out.println("running");
 	}
 
-	@GetMapping("/sde")
-	public String greeting() {
-		return "hii manoj ..welcome to docker world";
+	@GetMapping("/api/greet")
+	public String greet() {
+		return "Welcome to my Dockerized Spring Boot App!";
+	}
+
+	@GetMapping("/api/thriver")
+	public String thrive() {
+		return "Dear Pavan, no matter how long it takes, keep going. Someone will notice. Your time will come.";
 	}
 
 }
